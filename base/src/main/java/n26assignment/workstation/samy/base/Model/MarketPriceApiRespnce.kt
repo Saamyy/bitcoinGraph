@@ -1,4 +1,4 @@
-package n26assignment.workstation.samy.base.model
+package n26assignment.workstation.samy.base.Model
 
 data class MarketPriceApiRespnce(
     val status: String,

@@ -1,6 +1,6 @@
 package n26assignment.workstation.samy.base.DataSource
 
-import n26assignment.workstation.samy.base.model.ErrorModel
+import n26assignment.workstation.samy.base.Model.ErrorModel
 import retrofit2.Response
 import java.io.IOException
 
@@ -15,7 +15,7 @@ object ErrorParser {
         val error: ErrorModel
 
         try {
-            error = converter.convert(response.errorBody())
+            error = converter.convert(response.errorBody()!!)
         } catch (e: IOException) {
             return ErrorModel("", genralErrorMessage)
         }
