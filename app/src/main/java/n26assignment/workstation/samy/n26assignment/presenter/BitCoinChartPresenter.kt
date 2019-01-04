@@ -27,11 +27,9 @@ class BitCoinChartPresenter : BasePresenter<BitCoinChartViewContract>() {
     }
 
     fun getMarketPriceList():MutableLiveData<List<MarketPrice>>{
-        view()?.showLoading(false)
         return marketPriceList
     }
      fun getErrorModel(): MutableLiveData<ErrorModel>{
-         view()?.showLoading(false)
          return errorModel
      }
 
