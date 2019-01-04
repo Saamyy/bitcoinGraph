@@ -1,6 +1,6 @@
 package n26assignment.workstation.samy.base.Model
 
-data class MarketPriceApiRespnce(
+data class MarketPriceApiResponse(
     val status: String,
     val name: String,
     val unit: String,

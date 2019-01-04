@@ -6,8 +6,8 @@ import java.io.IOException
 
 object ErrorParser {
     private val genralErrorMessage: String = "something went wrong please try again later"
-    fun parseError(response: Response<Any>): ErrorModel {
-        val baseDataSource = BaseRetrofitMarketPriceDataSource()
+    fun parseError(response: Response<*>): ErrorModel {
+        val baseDataSource = BaseRetrofitMarketPriceRequest()
         val converter = baseDataSource.retrofit.responseBodyConverter<ErrorModel>(
             ErrorModel::class.java,
             arrayOfNulls<Annotation>(0)
