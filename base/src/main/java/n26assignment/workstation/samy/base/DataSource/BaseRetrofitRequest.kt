@@ -5,7 +5,7 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
-open class BaseRetrofitMarketPriceRequest {
+open class BaseRetrofitRequest {
     private val baseUrl: String = "https://api.blockchain.info"
     private var httpClient = OkHttpClient.Builder()
 

@@ -1,7 +1,7 @@
 package n26assignment.workstation.samy.n26assignment.DataSource.network
 
 import io.reactivex.Observable
-import n26assignment.workstation.samy.base.DataSource.BaseRetrofitMarketPriceRequest
+import n26assignment.workstation.samy.base.DataSource.BaseRetrofitRequest
 import n26assignment.workstation.samy.base.DataSource.ErrorParser
 import n26assignment.workstation.samy.base.Model.ErrorModel
 import n26assignment.workstation.samy.base.Model.MarketPriceApiResponse
@@ -10,7 +10,7 @@ import retrofit2.Call
 import retrofit2.Callback
 
 
-class MarketPriceRequest : BaseRetrofitMarketPriceRequest(), MarketPriceDataSource {
+class MarketPriceRequest : BaseRetrofitRequest(), MarketPriceDataSource {
     private var call: Call<MarketPriceApiResponse>? = null
 
     override fun gerMarketPrices(period: String): Observable<MarketPriceApiResponse> {
