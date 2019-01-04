@@ -2,6 +2,7 @@ package n26assignment.workstation.samy.base.Presenter
 
 import android.arch.lifecycle.MutableLiveData
 import android.content.Context
+import android.support.annotation.CallSuper
 import n26assignment.workstation.samy.base.Model.ErrorModel
 
 abstract class BasePresenter <V>{
@@ -25,5 +26,5 @@ abstract class BasePresenter <V>{
 
     abstract fun onViewAttached()
 
-    open fun onViewDetached(){}
+    abstract fun onViewDetached()
 }

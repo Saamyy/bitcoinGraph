@@ -28,7 +28,7 @@ class BitCoinChartUseCase(
         bag.add(disposable)
     }
 
-    fun DisposeObservable() {
+    fun disposeObservable() {
         bag.clear()
     }
 
