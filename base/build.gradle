@@ -31,6 +31,11 @@ dependencies {
     //support
     implementation "com.android.support:appcompat-v7:$appcompat_version"
     implementation "com.android.support:design:$appcompat_version"
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    implementation "com.google.code.gson:gson:$gson_version"
 
     //archComponents
     implementation "com.android.support:support-v4:$appcompat_version"

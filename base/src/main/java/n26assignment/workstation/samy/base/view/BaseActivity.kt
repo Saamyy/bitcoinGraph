@@ -10,7 +10,6 @@ abstract class BaseActivity<P : BasePresenter<V>, V> : AppCompatActivity() {
 
     abstract fun presenter(): P
 
-
     @CallSuper
     override fun onResume() {
         super.onResume()
