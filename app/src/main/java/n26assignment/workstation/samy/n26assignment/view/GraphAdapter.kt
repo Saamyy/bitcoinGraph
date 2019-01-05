@@ -15,7 +15,7 @@ class GraphAdapter : SparkAdapter() {
         }
 
     override fun getY(index: Int): Float {
-        return data?.get(index)?.value!!
+        return data?.get(index)?.value?: 0F
     }
 
     override fun getItem(index: Int): Any? {
