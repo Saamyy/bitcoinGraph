@@ -16,12 +16,13 @@ import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.Toast
 import android.text.format.DateFormat
+import n26assignment.workstation.samy.n26assignment.presenter.di.DaggerBitCoinChartPresenterComponent
 import java.util.*
 
 
 class BitCoinChartActivity : BaseActivity<BitCoinChartPresenter, BitCoinChartViewContract>(), BitCoinChartViewContract {
 
-    private val bitCoinChartPresenter = BitCoinChartPresenter()
+    private val bitCoinChartPresenter = DaggerBitCoinChartPresenterComponent.create().getBitCoinChartPresenter()
     private val graphAdapter = GraphAdapter()
     private var progressBar: ProgressBar? = null
     private var graphContainer: RelativeLayout? = null
@@ -56,7 +57,7 @@ class BitCoinChartActivity : BaseActivity<BitCoinChartPresenter, BitCoinChartVie
         maxRate = findViewById(R.id.max_rate)
         minRate = findViewById(R.id.min_rate)
         graph?.adapter = graphAdapter
-        graph?.background= ContextCompat.getDrawable(this, R.drawable.bg_graph)
+        graph?.background = ContextCompat.getDrawable(this, R.drawable.bg_graph)
 
     }
 

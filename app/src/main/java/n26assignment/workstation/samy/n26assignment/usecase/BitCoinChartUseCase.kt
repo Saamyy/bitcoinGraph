@@ -8,15 +8,19 @@ import n26assignment.workstation.samy.base.Model.ErrorModel
 import n26assignment.workstation.samy.base.Model.MarketPrice
 import n26assignment.workstation.samy.n26assignment.DataSource.Repository.MarketPriceRepository
 import n26assignment.workstation.samy.n26assignment.model.Period
+import javax.inject.Inject
 
-class BitCoinChartUseCase(
-    var marketPriceList: MutableLiveData<List<MarketPrice>>,
-    var errorModel: MutableLiveData<ErrorModel>
-) {
-    private var marketPriceRepository: MarketPriceRepository = MarketPriceRepository()
-    private val bag: CompositeDisposable = CompositeDisposable()
+class BitCoinChartUseCase @Inject constructor() {
+    @Inject
+    lateinit var marketPriceRepository: MarketPriceRepository
+    @Inject
+    lateinit var bag: CompositeDisposable
 
-    fun getMarketPrice(historyPeriod: Period) {
+    fun getMarketPrice(
+        historyPeriod: Period,
+        marketPriceList: MutableLiveData<List<MarketPrice>>,
+        errorModel: MutableLiveData<ErrorModel>
+    ) {
         val disposable = marketPriceRepository.getMarketPrice(historyPeriod.value)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())

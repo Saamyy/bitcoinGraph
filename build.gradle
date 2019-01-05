@@ -35,4 +35,6 @@ ext {
      rxandroid_version = "2.1.0"
      archComponents_version="1.1.1"
      graph_version="1.2.0"
+    daggerVersion = '2.13'
+
 }
