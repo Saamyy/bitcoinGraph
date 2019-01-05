@@ -2,6 +2,7 @@ package n26assignment.workstation.samy.n26assignment.view
 
 import android.arch.lifecycle.Observer
 import android.os.Bundle
+import android.support.v4.content.ContextCompat
 import android.view.View
 import n26assignment.workstation.samy.base.Model.ErrorModel
 import n26assignment.workstation.samy.base.Model.MarketPrice
@@ -55,6 +56,8 @@ class BitCoinChartActivity : BaseActivity<BitCoinChartPresenter, BitCoinChartVie
         maxRate = findViewById(R.id.max_rate)
         minRate = findViewById(R.id.min_rate)
         graph?.adapter = graphAdapter
+        graph?.background= ContextCompat.getDrawable(this, R.drawable.bg_graph)
+
     }
 
     private fun showData(data: List<MarketPrice>?) {
