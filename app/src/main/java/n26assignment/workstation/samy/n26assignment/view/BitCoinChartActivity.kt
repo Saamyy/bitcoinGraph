@@ -14,8 +14,6 @@ import com.robinhood.spark.SparkView
 import android.widget.ProgressBar
 import android.widget.RelativeLayout
 import android.widget.Toast
-import android.R.attr.data
-import android.icu.text.SimpleDateFormat
 import android.text.format.DateFormat
 import java.util.*
 
@@ -62,7 +60,7 @@ class BitCoinChartActivity : BaseActivity<BitCoinChartPresenter, BitCoinChartVie
     private fun showData(data: List<MarketPrice>?) {
         graphAdapter.data = data
         val firstItem = data?.get(0)
-        val lastItem = data?.get(data.size -1)
+        val lastItem = data?.get(data.size - 1)
         maxRate?.text = lastItem?.value.toString()
         minRate?.text = firstItem?.value.toString()
         startDate?.text = getStringDate(firstItem?.timeSpan)
@@ -72,9 +70,10 @@ class BitCoinChartActivity : BaseActivity<BitCoinChartPresenter, BitCoinChartVie
     }
 
     private fun getStringDate(timestamp: Long?): String? {
-        val cal = Calendar.getInstance(Locale.ENGLISH)
-        cal.timeInMillis = timestamp ?: 0L
-        return DateFormat.format("dd-MM-yyyy", cal).toString()
+        val requiredFormat = "dd-MM-yyyy"
+        val dateInMilliseconds = timestamp ?: 0
+        val date = Date(dateInMilliseconds.times(1000))
+        return DateFormat.format(requiredFormat, date).toString()
     }
 
     private fun showError(errorModel: ErrorModel?) {
