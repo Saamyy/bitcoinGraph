@@ -81,7 +81,7 @@ class BitCoinChartActivity : BaseActivity<BitCoinChartPresenter, BitCoinChartVie
 
     private fun showError(errorModel: ErrorModel?) {
         Toast.makeText(
-            this, errorModel?.message,
+            this, errorModel?.error,
             Toast.LENGTH_LONG
         ).show()
         showLoading(false)
