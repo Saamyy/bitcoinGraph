@@ -1,4 +1,4 @@
-package n26assignment.workstation.samy.base.Model
+package n26assignment.workstation.samy.base.model
 
 import com.google.gson.annotations.SerializedName
 

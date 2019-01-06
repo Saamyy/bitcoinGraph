@@ -4,9 +4,9 @@ import android.arch.lifecycle.Observer
 import android.os.Bundle
 import android.support.v4.content.ContextCompat
 import android.view.View
-import n26assignment.workstation.samy.base.Model.ErrorModel
-import n26assignment.workstation.samy.base.Model.MarketPrice
-import n26assignment.workstation.samy.base.View.BaseActivity
+import n26assignment.workstation.samy.base.model.ErrorModel
+import n26assignment.workstation.samy.base.model.MarketPrice
+import n26assignment.workstation.samy.base.view.BaseActivity
 import n26assignment.workstation.samy.n26assignment.R
 import n26assignment.workstation.samy.n26assignment.model.Period
 import n26assignment.workstation.samy.n26assignment.presenter.BitCoinChartPresenter

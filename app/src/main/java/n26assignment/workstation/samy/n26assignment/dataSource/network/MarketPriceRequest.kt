@@ -1,11 +1,11 @@
-package n26assignment.workstation.samy.n26assignment.DataSource.network
+package n26assignment.workstation.samy.n26assignment.dataSource.network
 
 import io.reactivex.Observable
-import n26assignment.workstation.samy.base.DataSource.BaseRetrofitRequest
-import n26assignment.workstation.samy.base.DataSource.ErrorParser
-import n26assignment.workstation.samy.base.Model.ErrorModel
-import n26assignment.workstation.samy.base.Model.MarketPriceApiResponse
-import n26assignment.workstation.samy.n26assignment.DataSource.MarketPriceDataSource
+import n26assignment.workstation.samy.base.dataSource.BaseRetrofitRequest
+import n26assignment.workstation.samy.base.dataSource.ErrorParser
+import n26assignment.workstation.samy.base.model.ErrorModel
+import n26assignment.workstation.samy.base.model.MarketPriceApiResponse
+import n26assignment.workstation.samy.n26assignment.dataSource.MarketPriceDataSource
 import retrofit2.Call
 import retrofit2.Callback
 

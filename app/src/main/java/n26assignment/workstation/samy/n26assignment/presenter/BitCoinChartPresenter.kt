@@ -1,10 +1,9 @@
 package n26assignment.workstation.samy.n26assignment.presenter
 
 import android.arch.lifecycle.MutableLiveData
-import n26assignment.workstation.samy.base.Model.ErrorModel
-import n26assignment.workstation.samy.base.Model.MarketPrice
-import n26assignment.workstation.samy.base.Presenter.BasePresenter
-import n26assignment.workstation.samy.n26assignment.view.BitCoinChartActivity
+import n26assignment.workstation.samy.base.model.ErrorModel
+import n26assignment.workstation.samy.base.model.MarketPrice
+import n26assignment.workstation.samy.base.presenter.BasePresenter
 import n26assignment.workstation.samy.n26assignment.model.Period
 import n26assignment.workstation.samy.n26assignment.usecase.BitCoinChartUseCase
 import n26assignment.workstation.samy.n26assignment.view.BitCoinChartViewContract

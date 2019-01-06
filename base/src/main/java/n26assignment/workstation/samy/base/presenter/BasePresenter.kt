@@ -1,9 +1,8 @@
-package n26assignment.workstation.samy.base.Presenter
+package n26assignment.workstation.samy.base.presenter
 
 import android.arch.lifecycle.MutableLiveData
 import android.content.Context
-import android.support.annotation.CallSuper
-import n26assignment.workstation.samy.base.Model.ErrorModel
+import n26assignment.workstation.samy.base.model.ErrorModel
 
 abstract class BasePresenter <V>{
     private var  view: V? =null

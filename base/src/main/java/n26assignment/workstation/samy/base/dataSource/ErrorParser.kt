@@ -1,6 +1,6 @@
-package n26assignment.workstation.samy.base.DataSource
+package n26assignment.workstation.samy.base.dataSource
 
-import n26assignment.workstation.samy.base.Model.ErrorModel
+import n26assignment.workstation.samy.base.model.ErrorModel
 import retrofit2.Response
 import java.io.IOException
 

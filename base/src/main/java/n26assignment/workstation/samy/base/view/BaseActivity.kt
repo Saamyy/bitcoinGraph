@@ -1,8 +1,8 @@
-package n26assignment.workstation.samy.base.View
+package n26assignment.workstation.samy.base.view
 
 import android.support.annotation.CallSuper
 import android.support.v7.app.AppCompatActivity
-import n26assignment.workstation.samy.base.Presenter.BasePresenter
+import n26assignment.workstation.samy.base.presenter.BasePresenter
 
 abstract class BaseActivity<P : BasePresenter<V>, V> : AppCompatActivity() {
 

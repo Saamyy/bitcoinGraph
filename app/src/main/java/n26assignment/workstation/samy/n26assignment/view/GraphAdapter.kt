@@ -1,7 +1,7 @@
 package n26assignment.workstation.samy.n26assignment.view
 
 import com.robinhood.spark.SparkAdapter
-import n26assignment.workstation.samy.base.Model.MarketPrice
+import n26assignment.workstation.samy.base.model.MarketPrice
 
 /**
  * Created by defuera on 27/03/2017.

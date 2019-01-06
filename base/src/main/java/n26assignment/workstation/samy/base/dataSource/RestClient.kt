@@ -1,7 +1,6 @@
-package n26assignment.workstation.samy.base.DataSource
+package n26assignment.workstation.samy.base.dataSource
 
-import io.reactivex.Single
-import n26assignment.workstation.samy.base.Model.MarketPriceApiResponse
+import n26assignment.workstation.samy.base.model.MarketPriceApiResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query

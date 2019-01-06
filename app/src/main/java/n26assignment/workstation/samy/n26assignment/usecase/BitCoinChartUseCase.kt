@@ -4,9 +4,9 @@ import android.arch.lifecycle.MutableLiveData
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
-import n26assignment.workstation.samy.base.Model.ErrorModel
-import n26assignment.workstation.samy.base.Model.MarketPrice
-import n26assignment.workstation.samy.n26assignment.DataSource.Repository.MarketPriceRepository
+import n26assignment.workstation.samy.base.model.ErrorModel
+import n26assignment.workstation.samy.base.model.MarketPrice
+import n26assignment.workstation.samy.n26assignment.dataSource.repository.MarketPriceRepository
 import n26assignment.workstation.samy.n26assignment.model.Period
 import javax.inject.Inject
 

@@ -1,4 +1,4 @@
-package n26assignment.workstation.samy.base.DataSource
+package n26assignment.workstation.samy.base.dataSource
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
